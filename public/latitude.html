@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="indexcss.css">
+    <style>
+        .color{
+            color: white;    
+        }
+        .color:hover{
+            color: #fff;
+        }
+        .footer {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(20, 117, 173, 0.877);
+            color: white;
+            text-align: center;
+        }
+        .left, .right{
+            display: inline-block;
+            
+        
+        }
+        .right{
+            float: right;
+            margin-right: 5%;
+        }
+        b{
+            font-size: 20px;
+        }
+        p{
+            font-size: 17px;
+        }
+        
+    </style>
+
+    <title>Latitude</title>
+</head>
+
+<body>
+
+    
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark nav1">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse center" id="collapsibleNavbar">
+            <div class="mainNav">
+                <ul class="navbar-nav">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/dell_logo.png" alt="logo" style="width: 80px;">
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link nav-log" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav2">
+                            <ul class="main-menu" style="margin-left:-13% ">
+                                <li> <a href="#">Laptops</a>                
+                                    <div class="menu-sub">
+                                        <h5 class="menu-category"></h5>
+                                        <ul>   
+                                            <li><a href="shopvostro.html">Vostro</a></li>
+                                            <li><a href="shopinspiron.html">Inspiron</a></li>
+                                            <li><a href="shoplatitude.html">Latitude</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-log" href="#">Contact Us</a>
+                    </li>    
+                </ul>
+            </div>
+        </div>  
+    </nav>
+
+    <h2 style="text-align: center; color: rgba(20, 117, 173, 0.877);" class="display-4">Dell Latitude</h2>
+    <!-- Details -->
+    <div class="left_right">
+        <div class="left">
+            <img class="mySlides" style="height: 500px; width: 800px; display: block;" src="images/dell_latitude.jpg" onmouseout="src='images/dell_latitude.jpg'" onmouseover="src='images/dell_latitude2.jpg'" >
+        </div>
+        <div class="right">
+            <h4 class="display-4" style="color:red; text-align: center;">Details</h4>
+            <p><b>Model: </b>E6410</p>
+            <p><b>Color: </b>Black</p>
+            <p><b>Warranty: </b>One Year</p>
+            <p><b>Price: </b>Rs 58000</p><input type="text" name="quantity" class="form-control" value="1">
+            <input type="submit" name="add" style="margin-top: 5px;" class="btn btn-success" value="Add to Cart">
+            
+        </div>
+    </div>
+          
+    <!-- Footer -->  
+    <div class="footer">
+        <p> &copy; Copyright Roll # 66 | BATCH 17A</p>
+        <p>2018 <a href="#" class="color"> Dell </a></p>
+    </div>
+    
+</body>
+</html>

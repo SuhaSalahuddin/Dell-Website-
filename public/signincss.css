@@ -1,0 +1,23 @@
+body{
+    background-color: whitesmoke;
+}
+header{
+    background-color: white;
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    padding-right: 1%;
+}
+.jumbotron{
+    background-color: white;
+}
+.color1 {
+    color: gray;
+    font-size: 0.8em;
+}
+.color1:hover{
+    color: gray;
+}
+.links{
+    font-size: 0.8em;
+}

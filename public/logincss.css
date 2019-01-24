@@ -1,0 +1,37 @@
+header{
+    background-color: black;
+    padding-left: 4%;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    padding-right: 1%;
+}
+
+.footer1{
+    background-color: #e2dddd; 
+    color: black;
+    padding: 0.7em;
+    font-size: 0.9em;
+}
+.footer1 a:hover{
+    color: black;
+}
+.footer2{
+    padding: 0.8em;
+    font-size: 0.9em;
+}
+.color1{
+    color: #1a1919;
+}
+li{
+    list-style: none;
+    text-indent: 1em;
+}
+.form{
+    padding-top: 2em;
+}
+#forgot-pwd :hover{
+    text-decoration: none;
+}
+#forgot-pwd{
+    font-size: 0.8em;
+}

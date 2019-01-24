@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script src="index.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="indexcss.css">
+    <link rel="stylesheet" href="logincss.css">
+    <style>
+        .color{
+            color: white;    
+        }
+        .color:hover{
+            color: #fff;
+        }
+    </style>
+
+    <title>Login | Dell Pakistan</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="images/dellEmc_logo.png" alt="DellEmc_Logo" width="180" height="30">
+        </div>
+    </header>
+    
+    <!-- Form -->
+    <div class="container form">
+        <div class="row">
+            <div class="col-sm-3 col-md-6 col-lg-4" id="login_div">
+                <div class="login">
+                    <h3>Premier Login</h3>
+                    <div id="warning"></div>
+                    Email Address: <span style="color:red;"> * </span> <br> 
+                    <input type="email" name="email" id="email_field" > <br>
+                    Password: <span style="color:red;"> * </span> <br> 
+                    <input type="password" name="pwd" id="pwd_field"> <br> <br>
+                    <button class="btn nav-lg" onclick="login()">Signin</button> 
+                    <p class="d-inline-block" id="forgot-pwd">&#9656;<a href="#" onclick="">Forgot your password</a></p>
+                    
+                    <!-- <button class="btn nav-lg" onClick="return checkusers()">Signin</button> 
+                    <p class="d-inline-block" id="forgot-pwd">&#9656;<a href="#" onclick="forgotPwd();">Forgot your password</a></p> -->
+                    </div>
+
+            </div>
+            <div class="col-sm-9 col-md-6 col-lg-8">
+                <h4>Don't have an account?</h4>
+                <p><a href="signin.html">Create new partner account</a></p>
+                <h4>Helpful links</h4>
+                <p>&#9656;<a href="#">Find a partner</a></p>
+                <p>&#9656;<a href="#">Contact us</a></p>
+                <p>&#9656;<a href="#">Terms & conditions</a></p>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <!-- Poster -->
+    <p style="text-align: center;"><img src="images/dellEmc.jpg" alt="EMC" height="300" width="1200" class="poster" ></p>
+
+    <!-- Footer -->
+    <div class="container-fluid text-center footer" style="margin-bottom:0">
+        <div class="row footer1">
+            <li><a href="#" class="d-inline-block color1">About Dell</a></li>
+            <li><a href="#" class="d-inline-block color1">Community</a></li>
+            <li><a href="#" class="d-inline-block color1">Events</a></li>
+            <li><a href="#" class="d-inline-block color1">Partner Program</a></li>
+            <li><a href="#" class="d-inline-block color1">Premier</a></li>
+            <li><a href="#" class="d-inline-block color1">Dell Technologies</a></li>
+        </div>
+        <div class="row footer2">
+            <li><a href="#" class="d-inline-block color">&copy; 2018 DELL</a></li>
+            <li><a href="#" class="d-inline-block color">Legal & Regulatory</a></li>
+            <li><a href="#" class="d-inline-block color">Site Terms</a></li>
+            <li><a href="#" class="d-inline-block color">Terms Of  Sale</a></li>
+            <li><a href="#" class="d-inline-block color">Unresolved Issues</a></li>
+            <li><a href="#" class="d-inline-block color">Privacy Statement</a></li>
+            <li><a href="#" class="d-inline-block color">Contact a Reseller</a></li>
+            <li><a href="#" class="d-inline-block color">Feedback</a></li>
+        </div>
+    </div>
+</body>
+</html>

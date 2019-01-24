@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="indexcss.css">
+    <link rel="stylesheet" href="logincss.css">
+    <link rel="stylesheet" href="alluserscss.css">
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/boot strap.min.js"></script>
+
+    <title>Registered Users | Dell Pakistan</title>
+</head>
+
+<body id="pagelist" onload="showusers()">
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="images/dell_logo.png" alt="Dell_Logo" width="100px" height="50px">
+            <div class="d-inline-block" style="float: right"> 
+                <a href="index.html" class="light h5">&emsp; Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Body -->
+
+    <!-- <div class="container">
+        <h3 class="loggedin">List of Registered Users</h3>
+    </div> -->
+    
+    <table class="table table-hover table-striped table-bordered" id="table1">
+        <thead class="thead">
+            <tr>
+                <th scope="col">User-Name</th>
+                <th scope="col">Email</th>               
+            </tr>
+            <tbody id="list"></tbody>
+        </thead>
+    </table>  
+    <p id="demo"></p>
+
+    
+    <!-- Footer -->    
+    <div class="footer">
+        <p> &copy; Copyright Roll # 66 | BATCH 17A</p>
+        <p>2018 <a href="#" class="color"> Dell </a></p>
+    </div>
+
+</body>
+
+    <!-- <script>
+        var txt = '{"name":"John", "age":30, "city":"New York"}'
+        var obj = JSON.parse(txt);
+        document.getElementById("demo").innerHTML = obj.name + ", " + obj.age + ", " + obj.city;
+    </script> -->
+    <script>
+        function showusers()
+        {
+            var loglength = localStorage.length - 1;
+            for(var i=0 ; i <= loglength; i++)
+            {
+                var name1, email1;
+                itemkey = localStorage.key(i);
+                value = localStorage.getItem(itemkey);
+                obj = JSON.parse(value);
+                name1 = obj.name1;
+                email1 = obj.email1;
+                document.getElementById("list").innerHTML += `<tr><td>${name1}</td><td>${email1}</td></tr>`;
+            }
+        }
+    </script>
+</html>

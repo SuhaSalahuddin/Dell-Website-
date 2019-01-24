@@ -1,0 +1,112 @@
+.nav1{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-indent: 20px;
+    background-color: rgba(20, 117, 173, 0.877); 
+}
+
+.mainNav{
+    margin-right: 15%;
+}
+
+.nav-log{
+    color: #fff!important;
+}
+
+.nav-lg{
+    color: #fff;
+    background-color: rgba(20, 117, 173, 0.877); 
+}
+
+.center{
+    display: flex; 
+    justify-content: center;
+} 
+
+.footer{
+    background-color: rgba(20, 117, 173, 0.877);
+    color: #fff!important;
+}
+
+.link1{
+    text-indent: 10px;
+    font-size: 13px;
+    text-decoration-color: blue;
+}
+.link1:hover{
+    text-decoration: underline;
+}
+
+.poster{
+    border-color: white;
+    border-width: 20px;
+    border-style: solid;
+}
+
+.navbar-right{
+    float: right;
+}
+
+.footerTable{
+    font-size: 12px;
+    text-decoration-color: white;
+    color: white!important;
+}
+
+.copyright{
+    text-align: center;
+    margin: auto;
+    padding: 12px;
+    width: 922px;
+}
+
+table{
+    margin: auto;
+}
+
+.mainNav li:hover {
+    background: rgba(25, 108, 156, 0.877);
+    
+}
+
+.login input{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;    
+    margin-bottom: 5px;
+}
+
+/* Laptop dropdown */
+.nav2 li {
+    display: inline-block;
+}
+.nav2 a {
+color: rgb(252, 252, 252);
+text-decoration: none;
+display: block;
+padding: .4em .1em;
+}
+.nav2 li:hover a {
+color: rgb(227, 227, 240);
+}
+.menu-sub {
+position: absolute;
+background: rgba(25, 108, 156, 0.577);
+width: 15%;
+display: none;
+color: rgb(233, 233, 240);
+padding: 1em;
+}
+.nav2 li:hover .menu-sub {
+display: block;
+}
+.menu-sub li {
+display: block;
+}
+.menu-sub a {
+padding: 0;
+margin-bottom: .5em;
+}
+/* Laptop dropdown ends */

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Firebase App is always required and must be first -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+
+    <!-- Add additional services that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-messaging.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-functions.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="indexcss.css">
+    <style>
+        .color{
+            color: white;    
+        }
+        .color:hover{
+            color: #fff;
+        }
+
+
+    </style>
+
+    <title>Dell Pakistan UnOfficial Site</title>
+</head>
+
+<body>
+
+    <!-- Signin Navbar -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar1">
+            <ul class="ml-auto nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link link1" href="signin.html">Partner Program Signup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link1" href="#">|</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link1" href="login.html">Premier Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark nav1">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse center" id="collapsibleNavbar">
+            <div class="mainNav">
+                <ul class="navbar-nav">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/dell_logo.png" alt="logo" style="width: 80px;">
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link nav-log" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav2">
+                            <ul class="main-menu" style="margin-left:-13% ">
+                                <li> <a href="#">Laptops</a>
+                                    <div class="menu-sub">
+                                        <h5 class="menu-category"></h5>
+                                        <ul>
+                                            <li><a href="shopvostro.html">Vostro</a></li>
+                                            <li><a href="shopinspiron.html">Inspiron</a></li>
+                                            <li><a href="shoplatitude.html">Latitude</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li><li class="nav-item">
+                        <div class="nav2">
+                            <ul class="main-menu" style="margin-left:-13% ">
+                                <li> <a href="#">Admin Panel</a>
+                                    <div class="menu-sub">
+                                        <h5 class="menu-category"></h5>
+                                        <ul>
+                                            <li><a href="adminpanel.php">Insert</a></li>
+                                            <li><a href="update.php">Update</a></li>
+                                            <li><a href="delete.php">Delete</a></li>
+                                            <li><a href="async.php">Asynchronous</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <form class="form-inline">
+                    <input type="text" class="form-control">
+                    <button class="btn nav-lg">Search</button>
+                </form>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Poster -->
+    <p style="text-align:center;"><img src="images/poster.jpg" alt="DELLimage" height="500" width="980" class="poster"></p>
+
+    <!-- Footer -->
+    <div class="jumbotron text-center footer" style="margin-bottom:0">
+        <table class="footerTable">
+            <tr>
+                <th colspan="4">Do more with Dell</th>
+                <th colspan="4">About Dell</th>
+                <th colspan="4">Legal</th>
+                <th colspan="4">Community</th>
+            </tr>
+            <tr>
+                <td colspan="4"> <a href="#" class="color">Partner Program</a></td>
+                <td colspan="4"> <a href="#" class="color">Company Information</a></td>
+                <td colspan="4"> <a href="#" class="color">Privacy Statement</a></td>
+                <td colspan="4"> <a href="#" class="color">The Dell Community</a></td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="4"> <a href="#" class="color">Corporate Social Responsibility</a></td>
+                <td colspan="4"> <a href="#" class="color">Legal & Regulatory</a></td>
+                <td colspan="4"> <a href="#" class="color">Read Our Blog</a></td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="4"> <a href="#" class="color">Customer Engagement</a></td>
+                <td colspan="4"> <a href="#" class="color">Site Terms</a></td>
+                <td colspan="4"> <a href="#" class="color">Events</a></td>
+            </tr>
+            <tr>
+                <td colspan="4"></td>
+                <td colspan="4"> <a href="#" class="color">Careers</a></td>
+                <td colspan="4"> <a href="#" class="color">Terms of Sale</a></td>
+                <td colspan="4"></td>
+            </tr>
+        </table>
+
+        <hr class="color">
+        <div class="copyright">
+            <p> &copy; Copyright Roll # 11 , 23 , 35 </p>
+            <p>2019 <a href="#" class="color"> Dell </a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

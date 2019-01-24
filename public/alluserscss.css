@@ -1,0 +1,32 @@
+
+.color{
+    color: white;    
+}
+.color:hover{
+    color: #fff;
+}
+body{
+    background-image: url(images/dell.jpg);
+    background-repeat: no-repeat;
+}
+h3{
+    position: absolute;
+    right: 38%;
+    color: rgb(31, 27, 27);
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.light{
+    color: white;
+}
+.light:hover{
+    text-decoration: none;
+    color: rgb(212, 211, 211);
+}

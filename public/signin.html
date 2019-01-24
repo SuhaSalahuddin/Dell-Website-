@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script src="index.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="indexcss.css">
+    <link rel="stylesheet" href="signincss.css">
+
+    <title>Premier Signup| Dell Pakistan</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <img src="images/dell_logo_blue.png" alt="DellEmc_Logo" width="50" height="50">
+        </div>
+    </header>
+
+    <section class="showcase" style="margin-top:3%; border:5em solid rgb(221, 221, 221);">
+        <div class="container-fluid ">
+            <h3>Premier</h3> <br>
+            <div class="row">
+                <!--using the gird system accroding to which half page is 6 col and other half is 6 col which makes a total of 12 col on a single page-->
+                <div class="col-md-6 col-sm-6">
+                    <div class="showcase-left left">
+                        <!--for leftside image-->
+
+                        <div action="successfullLogin.html" method="post" class="login">
+                            <h3>Premier Signin</h3>
+                            Email Address: <span style="color:red;"> * </span> <br>
+                            <input type="email" name="email" id="email1" required> <br>
+                            Username: <span style="color:red;"> * </span> <br>
+                            <input type="text" name="name" id="name1" required> <br>
+                            Password: <span style="color:red;"> * </span> <br>
+                            <input type="password" name="pwd" id="pwd" required> <br>
+                            <a href="#">Retrieve Different Profile</a> <br> <br>
+                            <button class="btn nav-lg" onClick="return checkdata()">Signin</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 whitegrid">
+                    <div class="showcase-right right">
+                        <!--for rightside text-->
+                        <p class="links"><a href="#">Learn more about Dell Premier</a></p>
+                        <p class="links"><a href="#">Contact Premier Support</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--2nd grid closed-->
+
+    <div id="warning">
+        <!--This is for warning-->
+    </div>
+
+    <!-- Footer -->
+    <div class="jumbotron text-center footer">
+        <div class="row">
+            <h6></h6>
+        </div>
+        <hr>
+        <div class="row footer1">
+            <li>
+                <a href="#" class="d-inline-block color1" style="text-decoration:none; text-align:center;">&copy; 2018
+                    DELL</a>
+            </li>
+        </div>
+        <div class="row footer2">
+            <li><a href="#" class="d-inline-block color1">Legal & Regulatory </a></li>
+            <li class="d-inline-block color1"> &nbsp;&nbsp;&nbsp;&nbsp;| </li>
+            <li><a href="#" class="d-inline-block color1">Site Terms</a></li>
+            <li class="d-inline-block color1"> &nbsp;&nbsp;&nbsp;&nbsp;| </li>
+            <li><a href="#" class="d-inline-block color1">Terms Of Sale</a></li>
+            <li class="d-inline-block color1"> &nbsp;&nbsp;&nbsp;&nbsp;| </li>
+            <li><a href="#" class="d-inline-block color1">Unresolved Issues</a></li>
+            <li class="d-inline-block color1"> &nbsp;&nbsp;&nbsp;&nbsp;| </li>
+            <li><a href="#" class="d-inline-block color1">Privacy Statement</a></li>
+            <li class="d-inline-block color1"> &nbsp;&nbsp;&nbsp;&nbsp;| </li>
+            <li><a href="#" class="d-inline-block color1">Contact a Reseller</a></li>
+            <li class="d-inline-block color1"> &nbsp;&nbsp;&nbsp;&nbsp;| </li>
+            <li><a href="#" class="d-inline-block color1">Feedback</a></li>
+        </div>
+    </div>
+</body>
+
+<script>
+    function checkdata()
+    {
+        const email1= document.getElementById("email1").value
+        const name1= document.getElementById("name1").value
+        const pwd= document.getElementById("pwd").value
+        firebase.auth().createUserWithEmailAndPassword(email1, pwd)
+            .then(function(user)    {
+                window.location.href="successfulllogin.html";
+            })
+            .catch(function (error)     {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                alert(errorMessage);
+            });
+    }
+
+</script>
+
+</html>
